@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --branco: #ffffff;
+    --preto: #000000;
+    --verde-pixelV: #00C621;
+    --roxo-pixelV: #4700CF;
+    --fundo-site: #F3F2F2;
+    --contato: #E5E5E5;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--fundo-site);
+}
+
+
+
+/* ------------------Header----------------- */
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5)), url("./img/BCM/menu.png");
+    height: 100vh;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    height: 165px;
+}
+
+header.container-grid {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 200px;
+}
+
+.menu {
+    max-width: 700px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    font-size: 20px;
+    color: #fff;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover {
+    text-decoration-color: #00C621;
+}
+
+
+#sobre {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#sobre img {
+    height: 530px;
+}
+
+#sobre p {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.linha-verde {
+    height: 250px;
+    width: 100vw;
+    background: linear-gradient(0deg, rgb(1, 239, 25)0%,
+            rgb(15, 55, 12) 100%);
+    margin-bottom: 100px;
+}
+
+#trabalhos h2 {
+    color: #000;
+    background: #fff;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-bottom: 30px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+
+.galeria img {
+    height: 350px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.galeria p {
+    font-weight: bold;
+}
+
+/* //////////////////////////////contato//////////////////////////////// */
+
+ #contato {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-top: 100px;
+}
+
+#contato .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#contato h2 {
+    margin-left: 5px;
+}
+
+#contato form {
+    max-width: 980px;
+    width: 90%;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ 
+    border-radius: 40px;
+    background-color: var(--verde-pixelV);
+
+    color: var(--preto);
+    font-family: "Recursive", sans-linear;
+    font-size: 17px;
+}
+
+.campo {
+    width: 60%;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+    width: 60%;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.campo input {
+    height: 40px;
+
+    color: var(--preto);
+    background-color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+    outline: none;
+}
+
+.campo-descricao textarea {
+    color: var(--branco);
+    background-color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo label,
+.campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input,
+.campo-descricao textarea {
+    font-family: "Recursive", sans-linear;
+    font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: #A0A0A0;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid var(--verde-pixelV);
+}
+
+#contato form button {
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--roxo-pixelV);
+    color: var(br);
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "Recursive", sans-linear-bold;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: background-color 500ms;
+}
+
+#contato form button:hover {
+    background-color: var(--verde-pixelV);
+}
